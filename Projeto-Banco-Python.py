@@ -1,4 +1,8 @@
 # --- tela inicial ---
+deposito = float
+saldo = float
+SAQUE_MAXIMO = 500
+LIMITE_DE_SAQUES = 3
 
 print("""         -------- Banco XI --------
       
@@ -45,10 +49,15 @@ if OPCAO == 1:
     destinatario = (input("Destino do depósito:"))
     str(input("Você tem certeza?"))
     print(f"Seu depósito para {destinatario}, foi realizado com sucesso !")
+    while deposito :
+        
 elif OPCAO == 2:
     float(input("Insira o valor do saque:")) 
     input("Voce tem certeza?")
     print("Sacando...")
+    while SAQUE_MAXIMO >= 500:
+       print("ERROR : Infelizmente, so podemos sacar ate R$ 500 diariamente. ")
+       break
 
 
 
